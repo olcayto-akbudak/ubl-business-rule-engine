@@ -1,0 +1,7 @@
+[project]
+name = "ubl-business-rule-engine"
+version = "0.1.0"
+description = "UBL XML İş Kuralı Motoru"
+requires-python = ">=3.12"
+[tool.ruff]
+line-length = 120

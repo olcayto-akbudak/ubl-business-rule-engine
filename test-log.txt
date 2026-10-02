@@ -1,0 +1,13 @@
+test_date (test_core.CoreTests.test_date) ... ok
+test_decimal (test_core.CoreTests.test_decimal) ... ok
+test_dtd (test_core.CoreTests.test_dtd) ... ok
+test_namespace (test_core.CoreTests.test_namespace) ... ok
+test_root_tax (test_core.CoreTests.test_root_tax) ... ok
+test_size (test_core.CoreTests.test_size) ... ok
+test_total (test_core.CoreTests.test_total) ... ok
+test_valid (test_core.CoreTests.test_valid) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.004s
+
+OK

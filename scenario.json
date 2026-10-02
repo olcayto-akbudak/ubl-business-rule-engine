@@ -1,0 +1,12 @@
+{
+  "documents": [
+    {
+      "id": "valid",
+      "xml": "<Invoice xmlns=\"urn:oasis:names:specification:ubl:schema:xsd:Invoice-2\" xmlns:cbc=\"urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2\" xmlns:cac=\"urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2\"><cbc:ID>DEMO-1</cbc:ID><cbc:IssueDate>2026-01-01</cbc:IssueDate><cbc:DocumentCurrencyCode>TRY</cbc:DocumentCurrencyCode><cac:InvoiceLine><cbc:ID>1</cbc:ID><cbc:InvoicedQuantity>2</cbc:InvoicedQuantity><cbc:LineExtensionAmount currencyID=\"TRY\">100</cbc:LineExtensionAmount><cac:Price><cbc:PriceAmount currencyID=\"TRY\">50</cbc:PriceAmount></cac:Price><cac:TaxTotal><cbc:TaxAmount currencyID=\"TRY\">20</cbc:TaxAmount></cac:TaxTotal></cac:InvoiceLine><cac:TaxTotal><cbc:TaxAmount currencyID=\"TRY\">20</cbc:TaxAmount></cac:TaxTotal><cac:LegalMonetaryTotal><cbc:LineExtensionAmount currencyID=\"TRY\">100</cbc:LineExtensionAmount><cbc:PayableAmount currencyID=\"TRY\">120</cbc:PayableAmount></cac:LegalMonetaryTotal></Invoice>"
+    },
+    {
+      "id": "bad-total",
+      "xml": "<Invoice xmlns=\"urn:oasis:names:specification:ubl:schema:xsd:Invoice-2\" xmlns:cbc=\"urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2\" xmlns:cac=\"urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2\"><cbc:ID>DEMO-1</cbc:ID><cbc:IssueDate>2026-01-01</cbc:IssueDate><cbc:DocumentCurrencyCode>TRY</cbc:DocumentCurrencyCode><cac:InvoiceLine><cbc:ID>1</cbc:ID><cbc:InvoicedQuantity>2</cbc:InvoicedQuantity><cbc:LineExtensionAmount currencyID=\"TRY\">100</cbc:LineExtensionAmount><cac:Price><cbc:PriceAmount currencyID=\"TRY\">50</cbc:PriceAmount></cac:Price><cac:TaxTotal><cbc:TaxAmount currencyID=\"TRY\">20</cbc:TaxAmount></cac:TaxTotal></cac:InvoiceLine><cac:TaxTotal><cbc:TaxAmount currencyID=\"TRY\">20</cbc:TaxAmount></cac:TaxTotal><cac:LegalMonetaryTotal><cbc:LineExtensionAmount currencyID=\"TRY\">100</cbc:LineExtensionAmount><cbc:PayableAmount currencyID=\"TRY\">121</cbc:PayableAmount></cac:LegalMonetaryTotal></Invoice>"
+    }
+  ]
+}

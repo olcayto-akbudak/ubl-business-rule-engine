@@ -1,0 +1,22 @@
+{
+  "documents": [
+    {
+      "id": "valid",
+      "findings": [],
+      "valid_in_supported_rules": true
+    },
+    {
+      "id": "bad-total",
+      "findings": [
+        {
+          "rule": "PAYABLE",
+          "path": "total/payable",
+          "severity": "ERROR",
+          "message": "simplified net + tax mismatch"
+        }
+      ],
+      "valid_in_supported_rules": false
+    }
+  ],
+  "scope": "XML parsing and a limited business-rule profile; not GIB XSD/Schematron certification"
+}
